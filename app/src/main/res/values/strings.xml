@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PinballApp</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="title">Burger\'s Pinball App</string>
+    <string name="loginHint">Enter A Username</string>
+    <string name="LoginButtonText">Login</string>
+    <string name="errMessageLogin">Invalid Login.  Please retry.</string>
+    <string name="errMessagePassword">Invalid Password.  Please retry.</string>
+    <string name="companyNames">Company:</string>
+    <string-array name="companyGroup">
+        <item>American Pinball</item>
+        <item>Chicago Gaming Company</item>
+        <item>Jersey Jack Pinball</item>
+        <item>Spooky Pinball</item>
+        <item>Stern Pinball</item>
+    </string-array>
+    <string name="nameMachine">Name of Machine:</string>
+    <string name="datePlayed">Date Played: </string>
+    <string name="dateHint">Select Day</string>
+    <string name="score">Score:</string>
+    <string name="rateMachinesbtn">Rate Machines</string>
+
+</resources>
