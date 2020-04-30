@@ -20,5 +20,12 @@
     <string name="dateHint">Select Day</string>
     <string name="score">Score:</string>
     <string name="rateMachinesbtn">Rate Machines</string>
+    <string name="JurassicPark">Jurassic Park</string>
+    <string name="StrangerThings">Stranger Things</string>
+    <string name="WillyWonka">Willy Wonka</string>
+    <string name="HotWheels">Hot Wheels</string>
+    <string name="ratingsHeading">Check the machines that you have played and rate them</string>
+    <string name="summaryButton">Submit</string>
+
 
 </resources>

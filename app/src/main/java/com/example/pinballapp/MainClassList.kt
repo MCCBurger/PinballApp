@@ -19,9 +19,9 @@ class MainClassList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_class_list)
 
-        val spnCompany = findViewById(R.id.spnCompany) as Spinner
-        val txtMachineName = findViewById(R.id.txtMachine) as EditText
-        val datePickerbtn = findViewById(R.id.spnDatePlayed) as TextView
+        val spnCompany = findViewById<Spinner>(R.id.spnCompany)
+        val txtMachineName = findViewById<EditText>(R.id.txtMachine)
+        val datePickerbtn = findViewById<TextView>(R.id.spnDatePlayed)
         var selectedDate = ""
         spnCompany.requestFocus()
 
@@ -32,15 +32,17 @@ class MainClassList : AppCompatActivity() {
             val day = cal.get(Calendar.DAY_OF_MONTH)
 
             val dateOfPlay = DatePickerDialog(this,DatePickerDialog.OnDateSetListener { view, myear, mMonth, mday ->
-                datePickerbtn.setText("$myear / ${mMonth+1} / $mday")
+                datePickerbtn.text = "$myear / ${mMonth+1} / $mday"
+                selectedDate = "$myear / ${mMonth+1} / $mday"
             },year,month,day)
 
             dateOfPlay.show()
-            selectedDate = dateOfPlay.toString()
+
+
         }
 
-        val txtScore = findViewById(R.id.txtScore) as EditText
-        val btnRateMachines = findViewById(R.id.btnRateMachines) as Button
+        val txtScore = findViewById<EditText>(R.id.txtScore)
+        val btnRateMachines = findViewById<Button>(R.id.btnRateMachines)
 
 
         btnRateMachines.setOnClickListener {
@@ -65,8 +67,8 @@ class MainClassList : AppCompatActivity() {
 
     }
     private fun checkData():Boolean{
-        val txtMachineName = findViewById(R.id.txtMachine) as EditText
-        val txtScore = findViewById(R.id.txtScore) as EditText
+        val txtMachineName = findViewById<EditText>(R.id.txtMachine)
+        val txtScore = findViewById<EditText>(R.id.txtScore)
 
         if(txtMachineName.text.toString().isEmpty()){
             txtMachineName.error = "Invalid Machine Name"
